@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <title>Welcome to Lendly</title>
+    
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="HomePage.html" class="logo">Lendly</a>
+        <nav class="navbar">
+            <a href="HomePage.html" >Home</a>
+            <a href="#" class="active">Sign Up</a>
+            <a href="logInPage.html" >Log In</a>
+            <a href="#" >About</a>
+        </nav>
+    </header>
+
+    <form action="indexAction.jsp" method="post">
+        <div class="container1">
+            <div class="title">Registration</div>
+            <div class="user-details">
+              
+              <div class="input-field">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Username" name="username" required>
+            </div>
+            <div class="input-field">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Password" name="pass" required>
+            </div>
+            <div class="input-field">
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="email" name="email" required>
+          </div>
+          <div class="input-field">
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="text" placeholder="Phone Number" name="phone"/>
+        </div>
+
+                <div class="input-field">
+                    <label for="fname"><b>First Name</b></label>
+                    <input type="text" placeholder="First Name" name="firstName" required>
+                </div>
+                <div class="input-field">
+                    <label for="lname"><b>Last Name</b></label>
+                    <input type="text" placeholder="Last Name" name="lastName" required>
+                </div>
+             
+                <div class="input-field">
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" placeholder="Address" name="addr"/>
+                </div>
+                <div class="input-field">
+                    <label for="address2"><b>Apt, P.O. Box, Unit</b></label>
+                    <input type="text" placeholder="Apt, P.O. Box, Unit" name="addr2" optional/>
+                </div>
+                <div class="input-field">
+                    <label for="city"><b>City</b></label>
+                    <input type="text" placeholder="City" name="city"/>
+                </div>
+                <div class="input-field">
+                    <label for="state"><b>State</b></label>
+                    <input type="text" placeholder="State" name="state"/>
+                </div>
+                <div class="input-field">
+                    <label for="zip"><b>Zip Code</b></label>
+                    <input type="text" placeholder="Zip Code" name="zip"/>
+                </div>
+         
+              
+            </div>
+            <div class="container" style="background-color:transparent">
+                <span class="login">Already have an account? <a href="logInPage.html" class="reg-login-links"> Click Here</a></span>
+
+            </div>
+            <div class="button-wrapper">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

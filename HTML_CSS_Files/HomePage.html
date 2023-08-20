@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <title>Welcome to Lendly</title>
+    <link rel="stylesheet" href="homePageStyle.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo">Lendly</a>
+
+        <form class="search-bar" action="homeSearchAction.jsp" method="post">
+            <div class="search-bar">
+            
+                <input type="text" placeholder="Search for a product..." name="searchBar">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+
+        <nav class="navbar">
+            <a href="HomePage.html" class="active">Home</a>
+				<!-- Checks if user is logged in an dif so it will hide these. Other wise it'll show. -->
+						<a href="signUpPage.html" >Sign Up</a>
+						<a href="logInPage.html" >Log In</a>	
+            <a href="#" >About</a>
+        </nav>
+    </header>
+
+<section class="home">
+    <div class="home-content">
+        <h1>Welcome To Lendly!</h1>
+        <h3>Transform Your Idle Electronics into Extra Income</h3>
+        <p><b>Upgrade Your Tech Experience without Breaking the Bank</b></p>
+    <div class="btn-box">
+        <a href="logInPage.html">View Rentals</a>
+        <a href="signUpPage.html">Get Started</a>
+         </div>
+         
+    </div>
+</section>
+</body>
+</html>

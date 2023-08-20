@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0">
+    <title>Welcome Back to Lendly</title>
+    
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header class="header">
+  <a href="HomePage.html" class="logo">Lendly</a>
+        <nav class="navbar">
+            <a href="HomePage.html" >Home</a>
+            <a href="signUpPage.html" >Sign Up</a>
+            <a href="logInPage.html" class="active">Log In</a>
+            <a href="#" >About</a>
+        </nav>
+    </header>
+
+    <form action="loginAction.jsp" method="post">
+        <div class="container1">
+            <div class="title">Log In</div>
+            <div class="user-details">
+              <div class="input-field">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+              </div>
+              <div class="input-field">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pass" required>
+                <span class="psw"> <a href="#" class="reg-login-links">Forgot password?</a></span>
+
+              </div>
+
+              <div class="checkbox-remember">
+                <label>
+                  <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+              </div>
+            </div>
+
+            <div class="container" style="background-color:transparent">
+              <div class="button-wrapper">
+                <button type="submit">Log in</button>
+              </div>
+     
+              <span class="login">New to Lendly? <a href="signUpPage.html" class="reg-login-links"> Signup Here</a></span>
+              
+          </div>
+      </div>
+  </form>
+
+</body>
+</html>

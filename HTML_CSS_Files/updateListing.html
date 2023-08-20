@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style2.css">
+<header class="header">
+  <a href="HomePage.html" class="logo">Lendly</a>
+  <nav class="navbar">
+      <a href="HomePage.html" >Home</a>
+      <a href="#" >About</a>
+  </nav>
+</header>
+<form action="indexAction.jsp" method="post">
+  <div class="container">
+    <div class="title">Update Listing</div>
+
+    <div class="input-field">
+    <label for="type"><b>Electronic Type</b></label>
+    <input type="text" placeholder="Electronic Type" name="elecType" required>
+    </div>
+    <label for="model"><b>Electronic Model</b></label>
+    <input type="text" placeholder="Electronic Model" name="elecModel" required>
+    
+    <label for="price"><b>Electronic Price</b></label>
+    <br><br>
+    <input type="number" id="elecPrice" name="elecPrice" placeholder="$"/>
+    <br><br>
+    
+    <label for="condition"><b>Electronic Condition</b></label>
+    <input type="text" placeholder="Electronic Condition" name="elecCondition"/>
+
+    <label for="availability"><b>Availability Dates</b></label>
+    <br><br>
+    <label for="from"><b>From</b></label>
+    <input type="date" id="firstDate" name="firstDate"/>
+    <label for="to"> <b>to </b></label>
+    <input type="date" id="secondDate" name="secondDate"/>
+	<br><br>
+
+    <label for="image"><b>Images</b></label>
+    <br><br>
+    <input type="file" id="img" name="img" multiple accept="image/*">
+    <div class="button-wrapper">
+    <button type="submit" class="update-button">Update Electronic Listing</button>
+    </div>
+  </div>
+
+  <div class="container" style="background-color:transparent">
+    <div class="button-wrapper">
+    <button type="button" class="cancelbtn">Cancel</button>
+    </div>
+  </div>
+  <div class="container" style="background-color:transparent">
+  <div class="button-wrapper">
+  <button type="button" class="cancelbtn"  style="background-color: rgb(243, 77, 77);width: 80%;">Remove Electronic Listing</button>
+</div>
+</div>
+</form>
+</html>

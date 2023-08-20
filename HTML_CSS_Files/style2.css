@@ -1,0 +1,314 @@
+/* Importing Google Fonts Poppins with multiple font weights */
+
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* CSS Reset: zeroing the margin, padding, and box-sizing of all elements; and setting the default font-family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+/* Setting the base style for body element */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #081b29;
+  margin: 0;
+}
+
+/*style for all buttons,provides transition effect */
+button {
+  position: relative;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 14px 20px;
+  margin: 8px 0;
+  background-color: #2BCC0E;
+  border: 2px solid #2BCC0E; 
+  border-radius: 8px;
+  color: #081b29;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/*hover effect for buttons */
+button:hover {
+  color: #2BCC0E; 
+}
+/*hover effect for buttons, transitions to the ::before button animation*/
+button:hover::before{
+  width: 100%;
+}
+/*hover effect for buttons,what the button animation transitions to */
+button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background:#081b29;
+  z-index: -1;
+  transition: .35s;
+}
+/*sign up/login confirm buttons*/
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+
+/*styles for checkbox label*/
+.checkbox-remember {
+  margin-left: 15px;
+  width: calc(100% - 15px);
+  display: flex;
+  justify-content:flex; 
+  color: white;
+}
+
+.container {
+  color: #d3d3d3;
+ 
+}
+
+/*title for the registration/login text boxes*/
+.container .title{
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content:center ;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+
+.container .cancelbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Add this line */
+  margin-top: 50px;
+  margin: 0 auto; /* Add this line */
+  background-color: gray;
+  border-color: gray;
+  color: white;
+}
+
+
+
+/*container1 is what all the registration text boxes are in*/
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  background: #081b29;
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin-top: 55px; 
+}
+
+/*title for the registration/login text boxes*/
+.container1 .title{
+  font-size: 25px;
+  font-weight: 800;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+
+/*container1 is what all the registration text boxes are in*/
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  background: #081b29;
+  border: 3px groove #2BCC0E;
+  padding: 25px 30px;
+  border-radius: 15px;
+  margin-top: 55px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*title for the registration/login text boxes*/
+.container2 .title{
+  font-size: 25px;
+  font-weight: 800;
+  color: #ededed;
+  margin-bottom: 30px;
+}
+
+.container3 {
+  color: #d3d3d3;
+ 
+}
+
+.container3 .title{
+  font-size: 25px;
+  font-weight: 800;
+  display: flex;
+  justify-content:center ;
+  color: #ededed;
+  margin-bottom: 30px;
+  
+  margin-top: 100px;
+}
+
+
+
+
+/*registratoin and login "click here" link colors*/
+.reg-login-links {
+  color: #2BCC0E;
+}
+
+/*registratoin and login "click here" link colors*/
+.reg-login-links:hover {
+  color: #ededed; 
+}
+
+.header{
+  height: 75px;
+  position: relative;
+}
+
+
+/*styles for all the text box input fields*/
+.input-field {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  color: #ededed;
+}
+
+
+/* styles for the actual text boxes in the input fields*/
+input[type=text], input[type=password],input[type=number] {
+  height: 45px;
+  width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #d3d3d3;
+    color: black;
+}
+/*styles for date*/
+input[type=date] {
+  height: 45px;
+  width: 31%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #d3d3d3;
+    color: black;
+}
+
+
+/* placeholder text color in the text boxes */
+input[type=text]::placeholder,
+input[type=password]::placeholder {
+    color: gray; 
+}
+
+/*header styles, content thats in the top  of screen*/
+.header{
+  position:fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  padding:20px 10%;
+  background-color:#081b29 ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+/*style for logo in top left of screen*/
+.logo{
+  font-size: 25px;
+  color:#ededed;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 20px;
+}
+
+
+/* The link to the login page if user pressed sign up but has an account already */
+span.login {
+    float: center;
+    padding-right: 25px;
+    padding: 25px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    text-decoration: none;
+}
+/*checkbox remmbemer me text*/
+span.psw, .checkbox-remember label {
+  color: white;
+  text-decoration: none;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw, span.login {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+}
+
+/*styles for navbar content, i..e top left stuff like login, sign up*/
+.navbar a{
+  font-size: 18px;
+  color:#ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: .3s;
+}
+/*hover color for the navbar*/
+.navbar a:hover,.navbar a.active{
+  color: #2BCC0E; 
+}
+
+/*button color for update button*/
+.update-button {
+  background-color: rgb(10, 167, 167); 
+  border-color: rgb(10, 167, 167); 
+  color: white; 
+}
+
+
+/*for the registration screen, forms the input fields in a grid layout
+and splits it in two columns*/
+.user-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
