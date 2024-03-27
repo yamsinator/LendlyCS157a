@@ -5,11 +5,11 @@
 	String db = "project_tables";
 
 	/* Also change url link here to correct DB */ 
-	String url = "jdbc:mysql://localhost:3306/project_tables?autoReconnect=true&useSSL=false";
-	String userName = "root";
+	String url = "jdbc:mysql://localhost:3306/ENTER_TABLENAME_HERE?autoReconnect=true&useSSL=false";
+	String userName = "ENTER_USERNAME_HERE";
 
 	/* Change password to your password */
-	String pass = "fitlife";
+	String pass = "ENTER_PASS_HERE";
 	
 /* Obtain information from the signUpPage form to send to MySQL Database */
     String uname = request.getParameter("username");
